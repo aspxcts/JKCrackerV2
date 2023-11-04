@@ -5,6 +5,7 @@ PREVIEW:
 
 THINGS TO KEEP IN MIND:
 im not good at optimizing code, so potato pcs stay away
+
 high chance of getting banned cuz people arent fun 😭
 
 ## Installation
