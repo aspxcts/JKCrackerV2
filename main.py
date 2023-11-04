@@ -132,8 +132,7 @@ def scan():
                 driver.find_element(By.XPATH,
                                     "//div[@class='game']/iframe[contains(@src,'jklm.fun')]"))
             break
-        except Exception as e:
-            print(e)
+        except:
             pass
 
     while True:
@@ -141,8 +140,7 @@ def scan():
             driver.find_element(By.XPATH,
                                 "/html/body/div[2]/div[3]/div[1]/div[1]/button").click()
             break
-        except Exception as e:
-            print(e)
+        except:
             pass
 
 
@@ -150,9 +148,7 @@ def scan():
         try:
             playerturn = driver.find_element(By.XPATH, "/html/body/div[2]/div[3]/div[2]/div[1]/span[2]").text
             if playerturn == "is up.":
-                print("player is up")
             else:
-                print("finding")
                 syllable = driver.find_element(By.XPATH, "/html/body/div[2]/div[2]/div[2]/div[2]/div").text
                 answerbox = driver.find_element(By.XPATH, "/html/body/div[2]/div[3]/div[2]/div[2]/form/input")
                 answerbox.click()
@@ -169,8 +165,8 @@ def scan():
                         driver.find_element(By.XPATH, "/html/body/div[2]/div[3]/div[2]/div[2]/form/input").send_keys(char)
                         time.sleep(random.randint(1, 10)/1000)
                     driver.find_element(By.XPATH, "/html/body/div[2]/div[3]/div[2]/div[2]/form/input").send_keys(Keys.ENTER)
-        except Exception as e:
-            print(e)
+        except:
+            print(" ")
 
 
 
