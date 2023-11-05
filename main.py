@@ -148,6 +148,7 @@ def scan():
         try:
             playerturn = driver.find_element(By.XPATH, "/html/body/div[2]/div[3]/div[2]/div[1]/span[2]").text
             if playerturn == "is up.":
+                print(" ")
             else:
                 syllable = driver.find_element(By.XPATH, "/html/body/div[2]/div[2]/div[2]/div[2]/div").text
                 answerbox = driver.find_element(By.XPATH, "/html/body/div[2]/div[3]/div[2]/div[2]/form/input")
